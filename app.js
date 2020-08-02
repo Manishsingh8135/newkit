@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const port = 4010;
+const port = process.env.port || 4010;
 
 mongoose.connect('mongodb://localhost/newapp', { useNewUrlParser: true, useUnifiedTopology: true });
 
